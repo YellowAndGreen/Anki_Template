@@ -1,0 +1,58 @@
+<div id="anki">
+  <!--first block-->
+           
+  <div id="first_block">
+    
+  <div class="front" id="front">{{正面}}</div>
+    
+  </div>
+  
+  <!--first block-->
+  
+  <!--second moving block-->
+  <div id="second_block2">
+    <span id="moving_block2">{{例句}}</span>
+  </div>
+  
+  <!--second moving block-->
+       
+
+
+</div>
+<!--放置br使得在移动端图标不会重合-->
+<br><br><br>
+<div id="image"></div>
+
+<a href="" class=link id="link">YellowAndGrren</a>
+
+<script>
+
+/* 例句和扩展有时为空的情况处理 */
+
+var second_block=document.getElementById("second_block");
+var extended_block=document.getElementById("extended_block");
+var translation=document.getElementById("translation");
+
+if("{{例句}}"==""){
+  second_block.style.display="none";
+  translation.style.display="none";
+}
+
+
+/* 左下角按钮点击显示卡片分组 */
+
+var image=document.getElementById("image");
+var link=document.getElementById("link");
+image.onclick=function(){
+  link.innerHTML="{{《》}}";
+  link.style.fontFamily= "_Bookerly";
+}
+/* 转化正面的词汇为可用 */
+
+var front=document.getElementById("front");
+var word=front.innerHTML;
+document.getElementById("link").setAttribute("href","eudic://dict/"+word.split(" ")[0]); 
+
+/* 左下角按钮点击显示卡片分组 */
+
+</script>

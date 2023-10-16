@@ -1,0 +1,263 @@
+@font-face { font-family: _Gurmukhi MN; src: url("_Gurmukhi MN.ttc"); }
+@font-face { font-family: Bookerly; src: url('_Bookerly.ttf'); }
+@font-face { font-family: _AdineKirnberg; src: url('_AdineKirnberg.TTF'); }
+@font-face { font-family: _COPPERPLATE; src: url('_COPPERPLATE.otf'); }
+
+body{
+  background:#FFFFE0;
+}
+#anki{
+  color: #eea849;
+  text-align: left;
+  margin: 0.2em;
+  font-size: 1.4em;
+  font-family: _Gurmukhi MN, "Helvetica Neue", helvetica, arial, sans-serif;
+}  
+.mobile #anki{
+  color: #eea849;
+  text-align: left;
+  margin: 0.2em;
+  font-size: 1.4em;
+  font-family: _Gurmukhi MN, "Helvetica Neue", helvetica, arial, sans-serif;
+}
+
+.win .line_02 span {
+  font-family: _COPPERPLATE;
+  font-weight: normal;
+  position: relative;
+  top: -20px;
+  padding:0x 6px;
+  font-size: 1.6em;
+  color: red;
+  background: #FFFFE0;
+}
+
+.iphone .line_02 span, .ipad .line_02 span, .mobile .line_02 span {
+  font-family: _COPPERPLATE;
+  font-weight: normal;
+  position: relative;
+  top: -20px;
+  padding: 2px 6px;
+  font-size: 1.4em;
+  color: red;
+  background: #FFFFE0;
+}
+
+
+.line_02 {
+  font-weight: normal;
+  height: 1px;
+  border-top: 2px double white;
+  text-align: center;
+  padding-bottom: 20px;
+  margin-bottom: 15px;
+
+}
+
+#first_block{
+  box-shadow: 0px 0px 20px 2px #FFFBFA;
+  background: #FFFCCA;
+  padding: 15px 0px 15px 15px;
+  border: 4px solid #FDFFD7;
+  border-radius: 20px;
+  opacity： 1;
+}
+
+/* 答案页面有下外边距*/
+.front {
+  margin-bottom: 10px;
+}
+
+.front, .front1{
+  color: #FF7256;
+}
+.frontside{
+  margin-left: 20px;
+}
+
+#front, #frontside {
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  padding: 5px 10px;
+}
+
+#front{
+  border-left: 4px solid red;
+}
+
+#frontside{
+  border-left: 4px solid yellow;
+  font-family: Bookerly;
+}
+
+#second_block {
+  box-shadow: 0px 0px 20px 2px #FFFBFA;
+  background: #FFFCCA;
+  margin-top: 10px;
+  padding: 3px 0px;
+  border: 4px solid #FDFFD7;
+  border-radius: 20px;
+  height: 30px;
+}
+
+#second_block2 {
+  box-shadow: 0px 0px 20px 2px #FFFBFA;
+  background: #FFFCCA;
+  margin-top: 10px;
+  padding: 3px 0px;
+  border: 4px solid #FDFFD7;
+  border-radius: 20px;
+}
+
+#moving_block {
+
+  padding-left: 15px;
+  positive: absolute;
+  text-align: left;
+  display: block;
+  padding-top: 5px;
+  opacity: 0;
+   -webkit-transition: opacity 1.5s;/* Safari */
+}
+
+#moving_block:hover {
+  opacity: 1;
+}   
+
+#extended_block{
+  font-family: Bookerly;
+  box-shadow: 0px 0px 20px 2px #FFFBFA;
+  background: #FFFCCA;
+  margin-top: 10px;
+  border: 4px solid #FDFFD7;
+  border-radius: 20px;
+  opacity： 0.5；
+}
+
+#moving_block {
+
+  padding-left: 15px;
+  positive: absolute;
+  text-align: left;
+  display: block;
+  padding-top: 5px;
+  opacity: 0;
+   -webkit-transition: opacity 1.5s;/* Safari */
+}
+
+#moving_block:hover {
+  opacity: 1;
+}   
+
+#moving_block2 {
+
+  padding-left: 15px;
+  positive: absolute;
+  text-align: left;
+  display: block;
+  padding-top: 5px;
+  opacity: 1;
+   -webkit-transition: opacity 1.5s;/* Safari */
+}
+
+.property1, .property2{
+  display: block;
+  padding: 5px 10px;
+  margin:10px 20px 10px 20px;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  border-left: 4px solid red;
+}
+
+.property2{
+  margin-left: 50px;
+  border-left: 4px solid yellow;
+}
+
+.iphone .property1, .ipad .property1{
+    font-family: COPPERPLATE;
+    color: red;
+}
+
+#translation{
+  color: #eea849;
+}
+
+#hidden_block{
+  font-size: 0.8em;
+  font-family: _COPPERPLATE;
+  font-weight: normal;
+  position: absolute;
+  margin-top: 1px;
+  margin-left: 35%;
+  color: red;
+}
+
+.iphone #hidden_block, .ipad #hidden_block, .mobile #hidden_block{
+  font-weight: normal;
+  font-family: _COPPERPLATE;
+}
+
+.iphone #image, .ipad #image, .mobile #image{
+  position:fixed;
+  bottom: -165px;
+  left:-170px;
+  transform: scale(0.1);
+  height: 400px;
+  width:400px;
+  background:url("_float_button.gif") no-repeat left top;
+  font-size: 1em;
+  text-intent:2em;
+}
+
+/*设置粗体为橙色*/
+#anki strong, #anki b{
+	color: #FF7256;
+}
+
+/*PC端音频图标样式，需要Replay_buttons_on_card插件*/
+/*隐藏掉插件默认样式*/
+.replaybutton span{
+display:none;
+}
+/*隐藏掉移动端默认的音频图标*/
+.soundLink .playImage{
+display:none;
+}
+/*移动端和PC端音频图标样式*/
+.soundLink,.replaybutton{
+position:relative;
+top:5px;
+left:2px;
+display:inline-block;
+background:url("_ydsound.png") no-repeat;
+background-size:contain;
+width:17px;
+height:17px;
+}
+.soundLink:hover,.replaybutton:hover{
+cursor:pointer;
+}
+
+/* 黄不盈的按钮 */
+.link {
+display: block;
+position: fixed;
+right: 1%;
+bottom: 20px;
+color: red;
+font-size: 0.7em;
+text-decoration:none;
+border:2px solid red;
+border-radius: 25px;
+padding:1px 3px;
+outline-style:none;
+z-index:1;
+font-family: _COPPERPLATE;
+font-weight: normal;
+}
+
+/* 去除按钮黑色闪烁 */
+* {
+   -webkit-tap-highlight-color: transparent;
+  }
